@@ -27,7 +27,7 @@ app.post("/create", (req, res) => {
     title: title,
   });
 
-  res.redirect("/");
+  res.render("pages/index");
 });
 app.get("/read", (req, res) => {
   axios
