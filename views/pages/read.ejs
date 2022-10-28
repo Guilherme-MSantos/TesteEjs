@@ -1,0 +1,20 @@
+
+  <%- include('../partials/head') ;%>
+  <body>
+    <%- include('../partials/navbar') ;%>
+    <div id="card-container">
+    <% for(var i=0; i<data.length; i++) {%>
+        <div class="card">
+          <p>
+            id: <%= data[i].id %>
+        </p>
+            <p>
+            title: <%= data[i].title %>
+           
+        </p>
+        </div>
+
+        <% } %>
+      </div>
+  </body>
+

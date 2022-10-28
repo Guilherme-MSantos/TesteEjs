@@ -1,0 +1,17 @@
+<%- include('../partials/head') ;%>
+<body>
+  <%- include('../partials/navbar') ;%>
+  <form action="/create" method="POST">
+    <label for="title"> Crie um novo post :</label>
+    <input
+      type="text"
+      name="title"
+      id="title"
+      required
+      placeholder="Digite o titulo"
+    />
+
+    <input type="submit" value="Registrar post" />
+  </form>
+</body>
+<%- include('../partials/footer') ;%>

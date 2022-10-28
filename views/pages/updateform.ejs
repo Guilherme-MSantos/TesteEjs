@@ -1,0 +1,15 @@
+<%- include('../partials/head') ;%>
+<body>
+  <%- include('../partials/navbar') ;%>
+  <form action="/update" method="post">
+    <input type="number" name="id" placeholder="id do post" required />
+    <input type="text" name="NewTitle" placeholder="Novo titulo" />
+    <input type="submit" value="Atualizar" />
+  </form>
+  <small>
+    * Antes de atualizar verifique se o id existe, acessando
+    <a href="/read" class="warning"> Ver todos os posts</a> *
+  </small>
+</body>
+
+<%- include('../partials/footer') ;%>

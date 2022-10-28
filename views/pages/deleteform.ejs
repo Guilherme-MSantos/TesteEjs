@@ -1,0 +1,15 @@
+<%- include('../partials/head') ;%>
+<body>
+  <%- include('../partials/navbar') ;%>
+
+  <form action="/delete" method="post">
+    <input type="number" name="id" placeholder="id do post" required />
+
+    <input type="submit" value="Deletar" />
+  </form>
+  <small>
+    *Antes de deletar verifique se o id existe, acessando
+    <a href="/read" class="warning"> Ver todos os posts</a>*
+  </small>
+</body>
+<%- include('../partials/footer') ;%>

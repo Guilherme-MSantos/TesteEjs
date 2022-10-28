@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  margin: 1rem;
+  color: black;
+  font-weight: bold;
+
+  padding: 0.4rem;
+}
+
+.warning {
+  margin: 0px;
+  padding: 0;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.445);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#card-container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.card {
+  border: 0.1em solid #b6b6b6;
+  width: 8rem;
+  height: 8rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin: 1rem;
+}
+
+form {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #b6b6b6;
+  height: 10rem;
+  padding: 4rem;
+}
+
+form input {
+  position: relative;
+  margin: 1rem;
+  padding: 0.1rem;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+.post-container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+}
